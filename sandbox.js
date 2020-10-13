@@ -38,4 +38,37 @@ window.onload = function(){
   // Storing object instances in the array
   arr = [personOne, personTwo, personThree, personFour, personFive];
 
+  // Creating event listeners for left and right arrow
+  leftArr.addEventListener("click", function(){
+    // if i is 0, make it equal to the length of the arr array and then decrement it by 1 each time, by going from user with bigger index to user with 0 index
+    if(i === 0){
+      i = arr.length;
+    }
+    i--;
+    h3.textContent = arr[i].name;
+    p.textContent = arr[i].review;
+    img.src= arr[i].image;
+    img.classList.add("img");
+    evalu.innerHTML = "Rating: " + arr[i].evaluation;
+    container.insertBefore(h3, p);
+    container.insertBefore(img, h3);
+    container.appendChild(evalu);
+  });
+
+  rightArr.addEventListener("click", function(){
+    // increment i by one each time, and when it is equal to 0, change its value to 0 so it could restart going form 0 again
+    i++;
+    if(i === arr.length){
+      i = 0;
+    }
+    h3.textContent = arr[i].name;
+    p.textContent = arr[i].review;
+    img.src = arr[i].image;
+    img.classList.add("img");
+    evalu.innerHTML = "Rating: " + arr[i].evaluation;
+    container.insertBefore(h3, p);
+    container.insertBefore(img, h3);
+    container.appendChild(evalu);
+  });
+
 }
