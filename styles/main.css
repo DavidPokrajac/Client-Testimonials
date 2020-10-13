@@ -58,3 +58,42 @@ body{
     padding: 0.5em;
     border-radius: 50%;
 }
+
+.img{
+    width: 150px;
+    height: 150px;
+}
+
+.orange{
+    color: orange;
+}
+
+#thumbnail{
+    display: block;
+    margin: -3em auto;
+    border-radius: 50%;
+    height: 6em;
+}
+
+#username{
+   margin: 3em;
+   text-align: center;
+}
+
+#evaluation{
+    text-align: center;
+    padding: 1em;
+    /* margin-top: 2em; */
+    font-size: 1.5em;
+}
+
+#review{
+    text-align: center;
+    padding: 1em;
+    line-height: 1.7em;
+    margin-top: -3em;
+}
+
+#review:first-letter{
+    font-size: 2em;
+}
