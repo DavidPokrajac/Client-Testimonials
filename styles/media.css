@@ -1,0 +1,33 @@
+@media screen and (max-width: 900px){
+    #container{
+        width: 70vw;
+        height: 400px;  
+    }
+    #evaluation{
+        border: 1px solid red;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #review{
+        padding: 0.3em;
+        font-size: 1em;
+    }
+    .prev{
+        font-size: 1em;
+    }
+    .next{
+        font-size: 1em;
+    }
+    #evaluation{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #review{
+        margin: 0.5em;
+        padding: 0.3em;
+        font-size: 0.9em;
+    }
+}
