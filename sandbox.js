@@ -22,7 +22,7 @@ window.onload = function(){
 
   // Creating a function constructor
   function Person(image, name, review, evaluation){
-    this.image = `.img/customer-${image}.jpg`;
+    this.image = `img/customer-${image}.jpg`;
     this.name = name;
     this.review = review;
     this.evaluation = evaluation;
